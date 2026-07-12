@@ -25,7 +25,7 @@ configuration_options = {
         label = "Spider Gland Fuel Value",
         hover = "Wet Goop style by default.",
         options = {
-            {description = "Tiny (Wet Goop)", data = "tiny"},
+            {description = "Tiny", data = "tiny"},
             {description = "Small", data = "small"},
             {description = "Medium", data = "medium"},
         },
@@ -37,7 +37,7 @@ configuration_options = {
         hover = "Beard Hair style by default.",
         options = {
             {description = "Tiny", data = "tiny"},
-            {description = "Small (Beard Hair)", data = "small"},
+            {description = "Small", data = "small"},
             {description = "Medium", data = "medium"},
         },
         default = "small",
