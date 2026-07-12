@@ -1,7 +1,7 @@
 name = "Spider Fuel"
 description = "Allows Silk and Spider Glands to be used as burnable fuel."
 author = "k0za1ak"
-version = "1.1.0"
+version = "1.1.1"
 
 forumthread = ""
 api_version = 10
