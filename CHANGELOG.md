@@ -3,6 +3,7 @@
 ## 1.1.1 - Version metadata
 
 - Bumped the mod version to `1.1.1`.
+- Added Steam Workshop ID and URL metadata.
 - Kept the existing configurable Silk and Spider Gland fuel behavior.
 
 ## 1.1.0 - Repository standardization

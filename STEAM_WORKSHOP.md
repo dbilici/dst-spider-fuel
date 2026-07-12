@@ -22,8 +22,8 @@ Configuration:
 
 Version: 1.1.1
 Author: k0za1ak
-Workshop ID: TBD
-Workshop URL: TBD
+Workshop ID: 3761256366
+Workshop URL: https://steamcommunity.com/sharedfiles/filedetails/?id=3761256366
 
 Source code:
 https://github.com/dbilici/dst-spider-fuel

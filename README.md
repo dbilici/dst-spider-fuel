@@ -5,8 +5,8 @@ Friends-only Don't Starve Together mod that lets Silk and Spider Glands be used 
 ## Status
 
 - Steam Workshop visibility: Friends Only
-- Workshop ID: TBD
-- Workshop URL: TBD
+- Workshop ID: `3761256366`
+- Workshop URL: https://steamcommunity.com/sharedfiles/filedetails/?id=3761256366
 - Steam title: `Spider Fuel`
 - Local source package: `Fuel_DST`
 - Mod name: `Spider Fuel`
