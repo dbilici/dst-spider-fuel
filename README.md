@@ -13,7 +13,7 @@ Friends-only Don't Starve Together mod that lets Silk and Spider Glands be used 
 - Author: `k0za1ak`
 - Source repository: https://github.com/dbilici/dst-spider-fuel
 - Repository folder: `dst-spider-fuel`
-- Version: `1.1.0`
+- Version: `1.1.1`
 
 ## Features
 

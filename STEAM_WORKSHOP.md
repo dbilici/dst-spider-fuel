@@ -20,7 +20,7 @@ Configuration:
 - Spider Gland Fuel Value: Tiny, Small, Medium
 - Silk Fuel Value: Tiny, Small, Medium
 
-Version: 1.1.0
+Version: 1.1.1
 Author: k0za1ak
 Workshop ID: TBD
 Workshop URL: TBD

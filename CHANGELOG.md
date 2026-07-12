@@ -1,5 +1,10 @@
 # Changelog
 
+## 1.1.1 - Version metadata
+
+- Bumped the mod version to `1.1.1`.
+- Kept the existing configurable Silk and Spider Gland fuel behavior.
+
 ## 1.1.0 - Repository standardization
 
 - Moved the mod into a dedicated repository folder.
