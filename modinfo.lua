@@ -1,7 +1,7 @@
 name = "Spider Fuel"
-description = "Allows Silk and Spider Glands to be used as burnable fuel."
+description = "Use Silk and Spider Glands as burnable fuel. Configure each item independently as Tiny, Small, or Medium fuel, with optional server diagnostics."
 author = "k0za1ak"
-version = "1.1.1"
+version = "1.1.2"
 
 forumthread = ""
 api_version = 10
@@ -41,5 +41,15 @@ configuration_options = {
             {description = "Medium", data = "medium"},
         },
         default = "small",
+    },
+    {
+        name = "debug_logging",
+        label = "Debug Logging",
+        hover = "Write configured fuel values and server prefab-patch diagnostics to the log.",
+        options = {
+            {description = "Disabled", data = false},
+            {description = "Enabled", data = true},
+        },
+        default = false,
     },
 }
