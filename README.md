@@ -1,10 +1,10 @@
 # Spider Fuel
 
-Friends-only Don't Starve Together mod that lets Silk and Spider Glands be used as burnable fuel.
+Public Don't Starve Together mod that lets Silk and Spider Glands be used as burnable fuel.
 
 ## Status
 
-- Steam Workshop visibility: Friends Only
+- Steam Workshop visibility: Public
 - Workshop ID: `3761256366`
 - Workshop URL: https://steamcommunity.com/sharedfiles/filedetails/?id=3761256366
 - Steam title: `Spider Fuel`
