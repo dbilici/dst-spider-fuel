@@ -1,5 +1,11 @@
 # Changelog
 
+## 1.1.2 - Diagnostics and Workshop copy
+
+- Added optional, disabled-by-default server patch logging.
+- Added the `SPIDER_FUEL_DEBUG()` console status command.
+- Expanded the Workshop description with configuration and compatibility details.
+
 ## 1.1.1 - Version metadata
 
 - Bumped the mod version to `1.1.1`.

@@ -13,7 +13,7 @@ Friends-only Don't Starve Together mod that lets Silk and Spider Glands be used 
 - Author: `k0za1ak`
 - Source repository: https://github.com/dbilici/dst-spider-fuel
 - Repository folder: `dst-spider-fuel`
-- Version: `1.1.1`
+- Version: `1.1.2`
 
 ## Features
 
@@ -30,6 +30,17 @@ Friends-only Don't Starve Together mod that lets Silk and Spider Glands be used 
 | --- | --- | --- |
 | Spider Gland Fuel Value | Tiny, Small, Medium | Tiny |
 | Silk Fuel Value | Tiny, Small, Medium | Small |
+| Debug Logging | Disabled, Enabled | Disabled |
+
+## Diagnostics
+
+Enable **Debug Logging**, restart the world, and inspect the shard's
+`server_log.txt` for `[Spider Fuel 1.1.2]` lines. The host/server console command
+below always prints the configured fuel values and live prefab patch counts:
+
+```text
+SPIDER_FUEL_DEBUG()
+```
 
 ## Install Locally
 
