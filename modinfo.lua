@@ -1,7 +1,7 @@
 name = "Spider Fuel"
 description = "Use Silk and Spider Glands as burnable fuel. Configure each item independently as Tiny, Small, or Medium fuel, with optional server diagnostics."
 author = "k0za1ak"
-version = "1.2.0-beta.1"
+version = "1.2.0"
 
 forumthread = ""
 api_version = 10
