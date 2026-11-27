@@ -13,7 +13,8 @@ Public Don't Starve Together mod that lets Silk and Spider Glands be used as bur
 - Author: `k0za1ak`
 - Source repository: https://github.com/dbilici/dst-spider-fuel
 - Repository folder: `dst-spider-fuel`
-- Version: `1.1.2`
+- Published Workshop version: `1.1.2`
+- Development version: `1.2.0-beta.1`
 
 ## Features
 
@@ -30,13 +31,13 @@ Public Don't Starve Together mod that lets Silk and Spider Glands be used as bur
 | --- | --- | --- |
 | Spider Gland Fuel Value | Tiny, Small, Medium | Tiny |
 | Silk Fuel Value | Tiny, Small, Medium | Small |
-| Debug Logging | Disabled, Enabled | Disabled |
+| Debug Mode | Off, Log only, Chat + log | Off |
 
 ## Diagnostics
 
-Enable **Debug Logging**, restart the world, and inspect the shard's
-`server_log.txt` for `[Spider Fuel 1.1.2]` lines. The host/server console command
-below always prints the configured fuel values and live prefab patch counts:
+Use the remote server console command `c_sf()` to print configured fuel values and live prefab patch counts, even when debug is off. Log only enables startup diagnostics; Chat + log additionally shows the invoking player a summary. Legacy boolean settings remain supported. Per-item spawn logging is intentionally removed to avoid log spam.
+
+Legacy command alias:
 
 ```text
 SPIDER_FUEL_DEBUG()
