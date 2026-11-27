@@ -1,5 +1,13 @@
 # Changelog
 
+## 1.2.0-beta.1 - Maintenance and diagnostics
+
+- Retain vanilla fuel components and existing fuel balance.
+- Standardize debug modes and add `c_sf()` with a legacy alias.
+- Remove per-spawn logging; retain on-demand diagnostics.
+- Add automated configuration and component regression coverage.
+- In-game validation pending.
+
 ## 1.1.2 - Diagnostics and Workshop copy
 
 - Added optional, disabled-by-default server patch logging.
