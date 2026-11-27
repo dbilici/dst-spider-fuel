@@ -14,7 +14,8 @@ Public Don't Starve Together mod that lets Silk and Spider Glands be used as bur
 - Source repository: https://github.com/dbilici/dst-spider-fuel
 - Repository folder: `dst-spider-fuel`
 - Published Workshop version: `1.1.2`
-- Development version: `1.2.0-beta.1`
+- Prepared release: `1.2.0` (Workshop publication pending)
+- Automated regression tests passed; manual in-game and unmodded-client validation pending.
 
 ## Features
 
