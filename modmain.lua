@@ -1,7 +1,10 @@
 local TUNING = GLOBAL.TUNING
 local FUELTYPE = GLOBAL.FUELTYPE
-local VERSION = "1.1.2"
-local DEBUG_ENABLED = GetModConfigData("debug_logging") == true
+local VERSION = "1.2.0"
+local DEBUG_MODE = GetModConfigData("debug_logging")
+-- Accept old boolean configuration values.
+if DEBUG_MODE == true then DEBUG_MODE = "log" end
+if DEBUG_MODE ~= "log" and DEBUG_MODE ~= "announce" then DEBUG_MODE = "off" end
 local tostring = GLOBAL.tostring
 
 local function WriteLog(message)
@@ -11,7 +14,7 @@ local function WriteLog(message)
 end
 
 local function DebugLog(message)
-    if DEBUG_ENABLED then
+    if DEBUG_MODE ~= "off" then
         WriteLog(message)
     end
 end
@@ -46,18 +49,22 @@ local function AddFuelToPrefab(prefab, fuel_value)
         inst.components.fuel.fuelvalue = fuel_value
         inst._spider_fuel_patched = true
 
-        DebugLog("patched prefab=" .. tostring(prefab) .. ", fuelvalue=" .. tostring(fuel_value))
-
         return inst
     end)
 end
 
-for prefab, fuel_value in pairs(FUEL_PREFABS) do
+for prefab, fuel_value in GLOBAL.pairs(FUEL_PREFABS) do
     AddFuelToPrefab(prefab, fuel_value)
 end
 
-GLOBAL.SPIDER_FUEL_DEBUG = function()
-    WriteLog("status: debug_logging=" .. tostring(DEBUG_ENABLED))
+local function Status()
+    if GLOBAL.TheWorld == nil or not GLOBAL.TheWorld.ismastersim then
+        WriteLog("Use the remote server console for diagnostics.")
+        return
+    end
+    local player = GLOBAL.ConsoleCommandPlayer ~= nil and GLOBAL.ConsoleCommandPlayer() or nil
+    WriteLog("status: debug_mode=" .. tostring(DEBUG_MODE))
+    local chat = {}
 
     for prefab, configured_value in GLOBAL.pairs(FUEL_PREFABS) do
         local spawned = 0
@@ -80,15 +87,22 @@ GLOBAL.SPIDER_FUEL_DEBUG = function()
             end
         end
 
-        WriteLog(
-            "prefab=" .. tostring(prefab)
+        local message = "prefab=" .. tostring(prefab)
             .. ", configured_value=" .. tostring(configured_value)
             .. ", spawned=" .. tostring(spawned)
             .. ", patched=" .. tostring(patched)
             .. ", mismatched=" .. tostring(mismatched)
-        )
+        WriteLog(message)
+        chat[#chat + 1] = prefab .. ": " .. tostring(patched) .. "/" .. tostring(spawned) .. " patched, " .. tostring(mismatched) .. " mismatched"
+    end
+    if DEBUG_MODE == "announce" and player ~= nil and player.components ~= nil
+        and player.components.talker ~= nil then
+        player.components.talker:Say(GLOBAL.table.concat(chat, "\n"))
     end
 end
+
+GLOBAL.c_sf = Status
+GLOBAL.SPIDER_FUEL_DEBUG = Status
 
 DebugLog(
     "loaded: spidergland=" .. tostring(FUEL_PREFABS.spidergland)

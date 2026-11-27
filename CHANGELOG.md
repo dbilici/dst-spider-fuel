@@ -1,5 +1,13 @@
 # Changelog
 
+## 1.2.0 - Maintenance and diagnostics
+
+- Retain vanilla fuel components and existing fuel balance.
+- Standardize debug modes and add `c_sf()` with a legacy alias.
+- Remove per-spawn logging; retain on-demand diagnostics.
+- Add automated configuration and component regression coverage.
+- Automated regression tests passed; manual in-game and unmodded-client validation pending.
+
 ## 1.1.2 - Diagnostics and Workshop copy
 
 - Added optional, disabled-by-default server patch logging.
