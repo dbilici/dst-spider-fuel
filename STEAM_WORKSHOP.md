@@ -37,7 +37,17 @@ separately. Configuration is controlled by the host/world.
 For troubleshooting, run [code]c_sf()[/code] in the remote server console. It reports the
 configured values and whether spawned Silk and Spider Glands were patched.
 
-Version: 1.2.0-beta.1 (draft, not published)
+Version: 1.2.0
 
 Source code and bug reports:
 https://github.com/dbilici/dst-spider-fuel
+
+## Change notes
+
+[h1]1.2.0 — Maintenance Update[/h1]
+[list]
+[*]Standardized debug modes and added [code]c_sf()[/code] diagnostics.
+[*]Removed repetitive per-item spawn logging.
+[*]Added automated regression tests for fuel settings and component preservation.
+[*]Existing fuel values, healing and upgrade behavior remain unchanged by this update.
+[/list]
