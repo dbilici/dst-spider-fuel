@@ -4,6 +4,7 @@ on:
   push:
     branches:
       - main
+      - 'feature/**'
   pull_request:
   workflow_dispatch:
 
@@ -33,6 +34,9 @@ jobs:
         run: |
           find . -name '*.lua' -not -path './.git/*' -print0 \
             | xargs -0 -n1 luac5.1 -p
+
+      - name: Test fuel behavior
+        run: lua5.1 tests/fuel_spec.lua
 
       - name: Check release metadata
         shell: bash
