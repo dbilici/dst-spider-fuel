@@ -1,6 +1,6 @@
 local TUNING = GLOBAL.TUNING
 local FUELTYPE = GLOBAL.FUELTYPE
-local VERSION = "1.2.0-beta.1"
+local VERSION = "1.2.0"
 local DEBUG_MODE = GetModConfigData("debug_logging")
 -- Accept old boolean configuration values.
 if DEBUG_MODE == true then DEBUG_MODE = "log" end
